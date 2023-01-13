@@ -38,41 +38,46 @@ function getRandomCard() {
 	}
 }
 
-const startGame = () =>{
+const startGame = () => {
 	isAlive = true;
 	let firstCard = getRandomCard();
 	let secondCard = getRandomCard();
 	cards = [firstCard, secondCard];
 	sum = firstCard + secondCard;
 	renderGame();
+	document.querySelector("#start").style.display = "none";
 }
 
-const renderGame = () =>{
+const renderGame = () => {
 	cardsEl.textContent = `Cards: `;
 	for (let i = 0; i < cards.length; i++){
 		cardsEl.textContent += `${cards[i]} `; 
+		if(i < cards.length - 1 ){
+			cardsEl.textContent += '+ ';
+		}
 	}
 	sumEl.textContent = `Sum: ${sum}`;
-	if (sum <= 20){
+	if (sum <= 20) {
 		message ="Do you want to draw a new card?";
 		isAlive = true;
-	} else if (sum === 21){
+	} else if (sum === 21) {
 		message = "Whoo! You've got BlackJack!";
 		hasBlackjack = true;
 		isAlive = true;
 	} else {
 		message = "You're out of the game!";
 		isAlive = false;
+		document.querySelector("#start").style.display = "flex";
 	}
 	messageEl.textContent = message;
 }
 
-const newCard = () =>{
-	if(isAlive === true && hasBlackjack === false){
+const newCard = () => {
+	if(isAlive === true && hasBlackjack === false) {
 		let card = getRandomCard();
-	sum += card;
-	cards.push(card);
-	renderGame()
+		sum += card;
+		cards.push(card);
+		renderGame();
 	}
 }
 

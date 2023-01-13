@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Carter+One&family=Cookie&family=Island+Moments&family=PT+Serif+Caption&family=Playfair+Display+SC:wght@400;700;900&family=Red+Hat+Display:wght@700;900&family=Roboto+Mono&display=swap');
+
+/* UNIVERSAL BODY STYLING */
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+/* UNIVERSAL BODY STYLING */
 body{
 	margin-top: 15px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Roboto Mono', monospace;
 	text-align: center;
 	color: white;
-	background-color: green;
+	background-color: rgb(5, 51, 5);
 }
-
+/* BODY H1 STYLING */
 h1{
 	color: goldenrod;
 	font-size: 50px;
@@ -20,21 +24,24 @@ h1{
 	margin-bottom: 20px;
 }
 
+/* DISPLAY MESSAGE STYLING */
 #message-el{
 	font-style: italic;
 	font-size: 30px;
 	margin-bottom: 20px;
 }
 
+/* PARAGRAPH MESSAGE STYLING */
 p{
 	font-size: 30px;
 	margin-bottom: 20px;
 }
 
+/* BUTTONS STYLING */
 button{
 	padding: 10px;
 	border: none;
-	color: green;
+	color: rgb(5, 51, 5);
 	font-weight: bold;
 	width: 200px;
 	font-size: 25px;
@@ -47,21 +54,22 @@ button{
 	justify-content: center;
 	margin-bottom: 6px;
 	margin-top: 6px;
+	font-family: 'Roboto Mono', monospace;
 }
 
+/* PLAYER MESSAGE STYLING */
 #player-el{
 	margin-top: 20px;
 	font-weight: bold;
 }
 
+/* MAIN FOOTER STYLING */
 #main-footer{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	font-size: 20px;
+	font-size: 15px;
 	text-align: center;
 	color: white;
 	margin-bottom: 10px;
-	letter-spacing: 2px;
-	font-family: Arial, Helvetica, sans-serif;
 }
