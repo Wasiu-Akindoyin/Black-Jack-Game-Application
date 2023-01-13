@@ -1,5 +1,3 @@
-
-
 let cards = [];
 
 let sum = 0;
