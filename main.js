@@ -16,14 +16,13 @@ let cardsEl = document.getElementById("cards-el");
 
 let newEl = document.getElementById("new");
 
-let player = {
-	name: "Wasiu",
-	chips: 150
-}
+let playerName = "Wasiu";
+
+let playerChip = Math.floor(Math.random() * 51);
 
 let playerEl = document.getElementById("player-el");
 
-playerEl.textContent = `${player.name}: $${player.chips}`
+playerEl.textContent = `${playerName}: $${playerChip}`;
 
 function getRandomCard() {
 	let randomNumbers = Math.floor(Math.random() * 13) + 1;
@@ -44,7 +43,7 @@ const startGame = () => {
 	sum = firstCard + secondCard;
 	renderGame();
 	document.querySelector("#start").style.display = "none";
-}
+};
 
 const renderGame = () => {
 	cardsEl.textContent = `Cards: `;
@@ -68,7 +67,7 @@ const renderGame = () => {
 		document.querySelector("#start").style.display = "flex";
 	}
 	messageEl.textContent = message;
-}
+};
 
 const newCard = () => {
 	if(isAlive === true && hasBlackjack === false) {
@@ -77,5 +76,4 @@ const newCard = () => {
 		cards.push(card);
 		renderGame();
 	}
-}
-
+};

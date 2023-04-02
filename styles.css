@@ -57,6 +57,11 @@ button{
 	font-family: 'Roboto Mono', monospace;
 }
 
+button:hover{
+	transition: 0.3s ease-in-out;
+	background-color: #b18005;
+}
+
 /* PLAYER MESSAGE STYLING */
 #player-el{
 	margin-top: 20px;
@@ -71,5 +76,41 @@ button{
 	font-size: 15px;
 	text-align: center;
 	color: white;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
+}
+
+/* MEDIA QUERY STYLING STARTS HERE */
+@media screen and (max-width: 500px) {
+	body{
+		margin-top: 30px;
+	}
+
+	h1{
+		font-size: 40px;
+		letter-spacing: 2px;
+		text-decoration: underline;
+		margin-bottom: 20px;
+	}
+	
+	#message-el{
+		font-size: 20px;
+	}
+
+	p{
+		font-size: 17px;
+	}
+
+	button{
+		padding: 5px;
+		width: 120px;
+		font-size: 20px;
+	}
+	
+	#player-el{
+		font-size: 15px;
+	}
+
+	#main-footer{
+		font-size: 10px;
+	}
 }
