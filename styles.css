@@ -80,7 +80,7 @@ button:hover{
 }
 
 /* MEDIA QUERY STYLING STARTS HERE */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
 	body{
 		margin-top: 30px;
 	}
@@ -93,7 +93,7 @@ button:hover{
 	}
 	
 	#message-el{
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	p{
