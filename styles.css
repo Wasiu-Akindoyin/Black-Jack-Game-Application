@@ -68,17 +68,6 @@ button:hover{
 	font-weight: bold;
 }
 
-/* MAIN FOOTER STYLING */
-#main-footer{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	font-size: 15px;
-	text-align: center;
-	color: white;
-	margin-bottom: 25px;
-}
-
 /* MEDIA QUERY STYLING STARTS HERE */
 @media screen and (max-width: 300px) {
 	body{
@@ -108,9 +97,5 @@ button:hover{
 	
 	#player-el{
 		font-size: 15px;
-	}
-
-	#main-footer{
-		font-size: 10px;
 	}
 }
