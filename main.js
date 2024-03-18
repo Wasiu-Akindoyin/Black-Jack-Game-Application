@@ -16,7 +16,7 @@ let cardsEl = document.getElementById("cards-el");
 
 let newEl = document.getElementById("new");
 
-let playerName = "Wasiu";
+let playerName = "Player";
 
 let playerChip = Math.floor(Math.random() * 51);
 

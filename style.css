@@ -15,6 +15,7 @@ body{
 	color: white;
 	background-color: rgb(5, 51, 5);
 }
+
 /* BODY H1 STYLING */
 h1{
 	color: goldenrod;
@@ -22,6 +23,7 @@ h1{
 	letter-spacing: 2px;
 	text-decoration: underline;
 	margin-bottom: 20px;
+	cursor: pointer;
 }
 
 /* DISPLAY MESSAGE STYLING */
